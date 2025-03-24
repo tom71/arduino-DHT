@@ -128,7 +128,11 @@ void DHT::readSensor()
   pinMode(pin, OUTPUT);
   if ( model == DHT11 ) {
     delay(18);
+  }else if (model == DHT22_TYPE2)
+  {
+    delayMicroseconds(2000);
   }
+  
   else {
     // This will fail for a DHT11 - that's how we can detect such a device
     delayMicroseconds(800);

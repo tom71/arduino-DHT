@@ -43,6 +43,7 @@ public:
     AUTO_DETECT,
     DHT11,
     DHT22,
+    DHT22_TYPE2, 
     AM2302,  // Packaged DHT22
     RHT03    // Equivalent to DHT22
   }
